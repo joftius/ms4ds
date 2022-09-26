@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Modern Statistics 4 Data Science</title>
+  <meta name="description" content="This bookdown publication contains lecture notes for a graduate course in statistics focusing on modern methods relevant to data science.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Modern Statistics 4 Data Science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This bookdown publication contains lecture notes for a graduate course in statistics focusing on modern methods relevant to data science." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Modern Statistics 4 Data Science" />
+  
+  <meta name="twitter:description" content="This bookdown publication contains lecture notes for a graduate course in statistics focusing on modern methods relevant to data science." />
+  
+
+<meta name="author" content="Joshua Loftus">
+
+
+<meta name="date" content="2019-12-04">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="literature.html">
+<link rel="next" href="applications.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.0/htmlwidgets.js"></script>
+<script src="libs/d3-3.3.8/d3.min.js"></script>
+<script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/chromatography-0.1/chromatography.js"></script>
+<script src="libs/DiagrammeR-binding-0.9.2/DiagrammeR.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">ms4ds</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
+<li class="chapter" data-level="4" data-path="ethics.html"><a href="ethics.html"><i class="fa fa-check"></i><b>4</b> Ethics</a><ul>
+<li class="chapter" data-level="4.1" data-path="ethics.html"><a href="ethics.html#motivating-example-fair-algorithms"><i class="fa fa-check"></i><b>4.1</b> Motivating example: fair algorithms</a></li>
+<li class="chapter" data-level="4.2" data-path="ethics.html"><a href="ethics.html#philosophy-of-ethics"><i class="fa fa-check"></i><b>4.2</b> Philosophy of ethics</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="ethics.html"><a href="ethics.html#meta-ethics"><i class="fa fa-check"></i><b>4.2.1</b> Meta-ethics</a></li>
+<li class="chapter" data-level="4.2.2" data-path="ethics.html"><a href="ethics.html#normative-ethics"><i class="fa fa-check"></i><b>4.2.2</b> Normative ethics</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="ethics.html"><a href="ethics.html#applied-ethics"><i class="fa fa-check"></i><b>4.3</b> Applied ethics</a></li>
+<li class="chapter" data-level="4.4" data-path="ethics.html"><a href="ethics.html#causality-and-fairness"><i class="fa fa-check"></i><b>4.4</b> Causality and fairness</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="ethics.html"><a href="ethics.html#moral-luck"><i class="fa fa-check"></i><b>4.4.1</b> Moral luck</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="ethics.html"><a href="ethics.html#additional-reading"><i class="fa fa-check"></i><b>4.5</b> Additional reading</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Modern Statistics 4 Data Science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ethics" class="section level1">
+<h1><span class="header-section-number">Section 4</span> Ethics</h1>
+<p>and so on</p>
+<div id="motivating-example-fair-algorithms" class="section level2">
+<h2><span class="header-section-number">4.1</span> Motivating example: fair algorithms</h2>
+</div>
+<div id="philosophy-of-ethics" class="section level2">
+<h2><span class="header-section-number">4.2</span> Philosophy of ethics</h2>
+<div id="meta-ethics" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Meta-ethics</h3>
+<p>Meta-ethics is about high level questions like:</p>
+<p>Can moral statements be factual, or are they just expressions of taste/preference? Are they universal, relative, or meaningless? What approaches can be used to establish moral claims? Can we rely on intuition, reason, or empirical evidence?</p>
+<p>We won’t dwell on these questions, rather we’ll proceed under a working assumption that moral claims are meaningful enough to merit our continued study. But we can also remember to reconsider these questions in light of the concepts and examples we focus on below.</p>
+</div>
+<div id="normative-ethics" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> Normative ethics</h3>
+<p>There are a variety of qualitatively different theoretical approaches for how we can determine what is ethical/moral. These approaches are not mutually exclusive so we do not have to choose one, we can and will use a</p>
+<p><strong>Consequentialism</strong> judges actions based on effects caused by those acts. Most common form of this is <strong>utilitarianism</strong>: the greatest good (utility) for the greatest number of people. Difficulties in defining utility, trading off between different people, deciding whether to judge specific acts or general rules for guiding actions, and uncertainty about predicting consequences</p>
+<p><strong>Deontology</strong> judges actions without reference to the effects caused by these actions. Actions can be considered good even if they result in bad consequences as long as they adhere to the correct moral rules</p>
+<p><strong>Virtue ethics</strong> judges traits. A person can be moral even if they act against deontological rules and their action causes negative consequences, provided the action is in accordance with some deeply held virtue. (Related to psychology? factors attributable to an individual and possibly measured through tests)</p>
+<p><em>Discussion/exercise</em>:</p>
+<ul>
+<li>Data science is usually framed (perhaps implicitly) as utilitarian because of its focus on prediction/causation (consequences) and optimization (utility). Discuss some prototypical data science problems with explicitly utilitarian language, and indicate how non-consequentialist theories can also apply to these problems.</li>
+<li>Deontology seems to most obviously relate to “equal treatment” notions of fairness, but (1) can other fairness notions be justified on a deontological basis, (2) how would other ethical theories justify/criticize equal treatment?</li>
+<li>How do we know/decide which things are virtuous? Is intelligence a virtue? Can different virtues contradict each other, and if so, how can we decide between them?</li>
+<li>For each of the previous normative frameworks, use that framework to describe an argument (1) supporting the practice of following laws, and (2) supporting the practice of moral law-breaking</li>
+</ul>
+</div>
+</div>
+<div id="applied-ethics" class="section level2">
+<h2><span class="header-section-number">4.3</span> Applied ethics</h2>
+<p>Applied ethics in data science is the most relevant part of this topic to our course.</p>
+<p>Biomedical/health data science: biomedical ethics</p>
+<p>Market failure ethics: since the law cannot anticipate and regulate every possible unethical course of action, business decision makers must take responsibility for not exploiting these loopholes. “Self-policing” - does it actually work? (Wall Street was trusted to self-police after deregulation that preceded the 2008 financial crisis).</p>
+</div>
+<div id="causality-and-fairness" class="section level2">
+<h2><span class="header-section-number">4.4</span> Causality and fairness</h2>
+<div id="htmlwidget-0ab13533e5eb344a9726" style="width:672px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0ab13533e5eb344a9726">{"x":{"diagram":"graph TB;\n  A[Gender]-->X[Car Color]\n  U(Aggression)-->X\n  U-->Y[Risk]"},"evals":[],"jsHooks":[]}</script>
+<div id="moral-luck" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> Moral luck</h3>
+</div>
+</div>
+<div id="additional-reading" class="section level2">
+<h2><span class="header-section-number">4.5</span> Additional reading</h2>
+<p>General data science ethics</p>
+<ul>
+<li>Statement: <a href="https://www.amstat.org/ASA/Your-Career/Ethical-Guidelines-for-Statistical-Practice.aspx">Ethical Guidelines for Statistical Practice</a> by the American Statistical Association</li>
+<li>Statement: <a href="https://www.acm.org/code-of-ethics">Code of Ethics and Professional Conduct</a> by the Association for Computing Machinery</li>
+<li>Short book: <a href="https://resources.oreilly.com/examples/0636920203964">Ethics and Data Science</a> by Mike Loukides, Hilary Mason, and DJ Patil (Patil was Chief Data Scientist during the Obama administration)</li>
+<li>Book: <a href="https://bookbook.pubpub.org/data-feminism">Data Feminism</a> by Catherine D’Ignazio and Lauren Klein</li>
+<li>Book: <a href="https://press.anu.edu.au/publications/series/caepr/indigenous-data-sovereignty">Indigenous Data Sovereignty</a> edited by Tahu Kukutai and John Taylor</li>
+<li>Case studies: <a href="https://aiethics.princeton.edu/case-studies/case-study-pdfs/">Collection of fictional case studies</a> by the Princeton Dialogues on AI and Ethics</li>
+</ul>
+<p>Fairness and causal models</p>
+<ul>
+<li>Articles: <a href="https://phenomenalworld.org/digital-ethics/disparate-causes-i">Disparate</a> <a href="https://phenomenalworld.org/digital-ethics/disparate-causes-pt-ii">Causes</a> by Lily Hu</li>
+<li>Paper: <a href="https://arxiv.org/abs/1805.05859">Causal Reasoning for Algorithmic Fairness</a> by Joshua Loftus, Chris Russell, Matt Kusner, and Ricardo Silva</li>
+</ul>
+<p>Stanford Encyclopedia of Philosophy</p>
+<ul>
+<li><a href="https://plato.stanford.edu/archives/spr2019/entries/informed-consent/">Informed Consent</a> by Nir Eyal</li>
+<li><a href="https://plato.stanford.edu/archives/sum2018/entries/ethics-computer/">Computer and Information Ethics</a> by Terrell Bynum</li>
+<li><a href="https://plato.stanford.edu/entries/ethics-social-networking/">Social Networking and Ethics</a> by Shannon Vallor</li>
+<li><a href="https://plato.stanford.edu/archives/fall2016/entries/ethics-search/">Search Engines and Ethics</a> by Herman Tavani</li>
+<li><a href="https://plato.stanford.edu/archives/fall2017/entries/ethics-business/">Business Ethics</a> by Jeffrey Moriarty</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="literature.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="applications.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["ms4ds.pdf", "ms4ds.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
