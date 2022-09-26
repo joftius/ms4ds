@@ -1,0 +1,10 @@
+# Causal inference
+
+## A variety of treatment effects
+
+## Directed acyclic graphs and structural equation models
+
+### Common problems?
+
+- Selection bias
+- Conditioning on colliders

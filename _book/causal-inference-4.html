@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Modern Statistics 4 Data Science</title>
+  <meta name="description" content="This bookdown publication contains lecture notes for a graduate course in statistics focusing on modern methods relevant to data science.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Modern Statistics 4 Data Science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This bookdown publication contains lecture notes for a graduate course in statistics focusing on modern methods relevant to data science." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Modern Statistics 4 Data Science" />
+  
+  <meta name="twitter:description" content="This bookdown publication contains lecture notes for a graduate course in statistics focusing on modern methods relevant to data science." />
+  
+
+<meta name="author" content="Joshua Loftus">
+
+
+<meta name="date" content="2019-12-04">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="causal-inference-3.html">
+<link rel="next" href="references.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.0/htmlwidgets.js"></script>
+<script src="libs/d3-3.3.8/d3.min.js"></script>
+<script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/chromatography-0.1/chromatography.js"></script>
+<script src="libs/DiagrammeR-binding-0.9.2/DiagrammeR.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">ms4ds</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Outline</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="ethical-data-science.html"><a href="ethical-data-science.html"><i class="fa fa-check"></i><b>3</b> Ethical data science</a><ul>
+<li class="chapter" data-level="3.1" data-path="ethical-data-science.html"><a href="ethical-data-science.html#motivating-example-fair-algorithms"><i class="fa fa-check"></i><b>3.1</b> Motivating example: fair algorithms</a></li>
+<li class="chapter" data-level="3.2" data-path="ethical-data-science.html"><a href="ethical-data-science.html#philosophy-of-ethics"><i class="fa fa-check"></i><b>3.2</b> Philosophy of ethics</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="ethical-data-science.html"><a href="ethical-data-science.html#meta-ethics"><i class="fa fa-check"></i><b>3.2.1</b> Meta-ethics</a></li>
+<li class="chapter" data-level="3.2.2" data-path="ethical-data-science.html"><a href="ethical-data-science.html#normative-ethics"><i class="fa fa-check"></i><b>3.2.2</b> Normative ethics</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="ethical-data-science.html"><a href="ethical-data-science.html#applied-ethics"><i class="fa fa-check"></i><b>3.3</b> Applied ethics</a></li>
+<li class="chapter" data-level="3.4" data-path="ethical-data-science.html"><a href="ethical-data-science.html#causality-and-fairness"><i class="fa fa-check"></i><b>3.4</b> Causality and fairness</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="ethical-data-science.html"><a href="ethical-data-science.html#moral-luck"><i class="fa fa-check"></i><b>3.4.1</b> Moral luck</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="ethical-data-science.html"><a href="ethical-data-science.html#additional-reading"><i class="fa fa-check"></i><b>3.5</b> Additional reading</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="foundations-of-inference.html"><a href="foundations-of-inference.html"><i class="fa fa-check"></i><b>4</b> Foundations of inference</a><ul>
+<li class="chapter" data-level="4.1" data-path="foundations-of-inference.html"><a href="foundations-of-inference.html#philosophy-of-statistics"><i class="fa fa-check"></i><b>4.1</b> Philosophy of statistics</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="foundations-of-inference.html"><a href="foundations-of-inference.html#additional-reading-1"><i class="fa fa-check"></i><b>4.1.1</b> Additional reading</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="foundations-of-inference.html"><a href="foundations-of-inference.html#hypothesis-testing-background"><i class="fa fa-check"></i><b>4.2</b> Hypothesis testing background</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="foundations-of-inference.html"><a href="foundations-of-inference.html#hypothesis-formulation-a-neglected-topic-in-data-science-education"><i class="fa fa-check"></i><b>4.2.1</b> Hypothesis formulation: a neglected topic in data science education?</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="foundations-of-inference.html"><a href="foundations-of-inference.html#causality"><i class="fa fa-check"></i><b>4.3</b> Causality</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="large-scale-testing.html"><a href="large-scale-testing.html"><i class="fa fa-check"></i><b>5</b> Large scale testing</a><ul>
+<li class="chapter" data-level="5.1" data-path="large-scale-testing.html"><a href="large-scale-testing.html#multiple-testing"><i class="fa fa-check"></i><b>5.1</b> Multiple testing</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="large-scale-testing.html"><a href="large-scale-testing.html#family-wise-error-rate"><i class="fa fa-check"></i><b>5.1.1</b> Family-wise error rate</a></li>
+<li class="chapter" data-level="5.1.2" data-path="large-scale-testing.html"><a href="large-scale-testing.html#special-cases-groups-and-hierarchy"><i class="fa fa-check"></i><b>5.1.2</b> Special cases: groups and hierarchy</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="large-scale-testing.html"><a href="large-scale-testing.html#selective-inference"><i class="fa fa-check"></i><b>5.2</b> Selective inference</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="large-scale-testing.html"><a href="large-scale-testing.html#false-discovery-rate"><i class="fa fa-check"></i><b>5.2.1</b> False discovery rate</a></li>
+<li class="chapter" data-level="5.2.2" data-path="large-scale-testing.html"><a href="large-scale-testing.html#special-cases-groups-and-hierarchy-1"><i class="fa fa-check"></i><b>5.2.2</b> Special cases: groups and hierarchy</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="large-scale-testing.html"><a href="large-scale-testing.html#empirical-bayes-approaches"><i class="fa fa-check"></i><b>5.3</b> Empirical Bayes approaches</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="causal-inference.html"><a href="causal-inference.html"><i class="fa fa-check"></i><b>6</b> Causal inference</a><ul>
+<li class="chapter" data-level="6.1" data-path="causal-inference.html"><a href="causal-inference.html#a-variety-of-treatment-effects"><i class="fa fa-check"></i><b>6.1</b> A variety of treatment effects</a></li>
+<li class="chapter" data-level="6.2" data-path="causal-inference.html"><a href="causal-inference.html#directed-acyclic-graphs-and-structural-equation-models"><i class="fa fa-check"></i><b>6.2</b> Directed acyclic graphs and structural equation models</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="causal-inference.html"><a href="causal-inference.html#common-problems"><i class="fa fa-check"></i><b>6.2.1</b> Common problems?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="causal-inference-1.html"><a href="causal-inference-1.html"><i class="fa fa-check"></i><b>7</b> Causal inference</a><ul>
+<li class="chapter" data-level="7.1" data-path="causal-inference-1.html"><a href="causal-inference-1.html#a-variety-of-treatment-effects-1"><i class="fa fa-check"></i><b>7.1</b> A variety of treatment effects</a></li>
+<li class="chapter" data-level="7.2" data-path="causal-inference-1.html"><a href="causal-inference-1.html#directed-acyclic-graphs-and-structural-equation-models-1"><i class="fa fa-check"></i><b>7.2</b> Directed acyclic graphs and structural equation models</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="causal-inference-1.html"><a href="causal-inference-1.html#common-problems-1"><i class="fa fa-check"></i><b>7.2.1</b> Common problems?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="causal-inference-2.html"><a href="causal-inference-2.html"><i class="fa fa-check"></i><b>8</b> Causal inference</a><ul>
+<li class="chapter" data-level="8.1" data-path="causal-inference-2.html"><a href="causal-inference-2.html#a-variety-of-treatment-effects-2"><i class="fa fa-check"></i><b>8.1</b> A variety of treatment effects</a></li>
+<li class="chapter" data-level="8.2" data-path="causal-inference-2.html"><a href="causal-inference-2.html#directed-acyclic-graphs-and-structural-equation-models-2"><i class="fa fa-check"></i><b>8.2</b> Directed acyclic graphs and structural equation models</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="causal-inference-2.html"><a href="causal-inference-2.html#common-problems-2"><i class="fa fa-check"></i><b>8.2.1</b> Common problems?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="causal-inference-3.html"><a href="causal-inference-3.html"><i class="fa fa-check"></i><b>9</b> Causal inference</a><ul>
+<li class="chapter" data-level="9.1" data-path="causal-inference-3.html"><a href="causal-inference-3.html#a-variety-of-treatment-effects-3"><i class="fa fa-check"></i><b>9.1</b> A variety of treatment effects</a></li>
+<li class="chapter" data-level="9.2" data-path="causal-inference-3.html"><a href="causal-inference-3.html#directed-acyclic-graphs-and-structural-equation-models-3"><i class="fa fa-check"></i><b>9.2</b> Directed acyclic graphs and structural equation models</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="causal-inference-3.html"><a href="causal-inference-3.html#common-problems-3"><i class="fa fa-check"></i><b>9.2.1</b> Common problems?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="causal-inference-4.html"><a href="causal-inference-4.html"><i class="fa fa-check"></i><b>10</b> Causal inference</a><ul>
+<li class="chapter" data-level="10.1" data-path="causal-inference-4.html"><a href="causal-inference-4.html#a-variety-of-treatment-effects-4"><i class="fa fa-check"></i><b>10.1</b> A variety of treatment effects</a></li>
+<li class="chapter" data-level="10.2" data-path="causal-inference-4.html"><a href="causal-inference-4.html#directed-acyclic-graphs-and-structural-equation-models-4"><i class="fa fa-check"></i><b>10.2</b> Directed acyclic graphs and structural equation models</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="causal-inference-4.html"><a href="causal-inference-4.html#common-problems-4"><i class="fa fa-check"></i><b>10.2.1</b> Common problems?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Modern Statistics 4 Data Science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="causal-inference-4" class="section level1">
+<h1><span class="header-section-number">Section 10</span> Causal inference</h1>
+<div id="a-variety-of-treatment-effects-4" class="section level2">
+<h2><span class="header-section-number">10.1</span> A variety of treatment effects</h2>
+</div>
+<div id="directed-acyclic-graphs-and-structural-equation-models-4" class="section level2">
+<h2><span class="header-section-number">10.2</span> Directed acyclic graphs and structural equation models</h2>
+<div id="common-problems-4" class="section level3">
+<h3><span class="header-section-number">10.2.1</span> Common problems?</h3>
+<ul>
+<li>Selection bias</li>
+<li>Conditioning on colliders</li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="causal-inference-3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["ms4ds.pdf", "ms4ds.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

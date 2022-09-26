@@ -1,0 +1,16 @@
+# Large scale testing
+
+## Multiple testing
+
+### Family-wise error rate
+
+### Special cases: groups and hierarchy
+
+## Selective inference
+
+### False discovery rate
+
+### Special cases: groups and hierarchy
+
+## Empirical Bayes approaches
+

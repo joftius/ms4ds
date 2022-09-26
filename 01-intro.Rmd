@@ -1,0 +1,9 @@
+# Introduction {#intro}
+
+This section will contain a few motivating examples illustrating problems like
+
+- Association vs causation
+- Regression model selection
+- Multiple testing and p-hacking
+- Fair algorithms
+- Dangers of AI

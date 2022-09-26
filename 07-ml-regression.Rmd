@@ -1,0 +1,9 @@
+# Machine learning and high dimensional regression
+
+Expanding our set of regression-like tools
+
+## Lasso and penalized regression
+
+## Generalized additive models
+
+## Trees, forests, boosting

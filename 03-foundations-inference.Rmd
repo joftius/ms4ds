@@ -1,0 +1,30 @@
+# Foundations of inference
+
+## Philosophy of statistics
+
+In general it is a good habit to (re-)examine one's beliefs, but there are also good reasons to study philosophy specific to statistics and data science.
+
+What is the meaning of probability? Kolmogorov’s axioms describe a kind of mathematical model, but what relation do such models have to the real world, if any? The same set of axioms can be used (and fruitfully!) to describe:
+
+- Hypothetical **properties of the physical world**, as in most interpretations of quantum physics, or the “**propensity**” of a dice to land on a particular side
+- **Degrees of subjective belief**, or confidence, that a given individual has about states of the world
+- **Logical rules** governing quantitative relationships between hypotheses and evidence
+
+### Additional reading
+
+https://en.wikipedia.org/wiki/Probability_interpretations
+https://plato.stanford.edu/entries/probability-interpret/
+https://en.wikipedia.org/wiki/Foundations_of_statistics
+https://en.wikipedia.org/wiki/Philosophy_of_science
+
+
+## Hypothesis testing background
+
+
+
+### Hypothesis formulation: a neglected topic in data science education?
+
+
+## Causality
+
+

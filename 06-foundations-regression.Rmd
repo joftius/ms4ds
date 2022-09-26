@@ -1,0 +1,16 @@
+# Foundations of regression
+
+## Philosophy of regression models
+
+- Why assume errors are Gaussian?
+- False hope of causality
+
+## Linear regression
+
+## Generalized linear models and exponential families
+
+
+## Inference in regression models
+
+## Model diagnostics
+
